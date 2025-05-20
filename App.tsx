@@ -9,15 +9,15 @@ function App() {
     localStorage.setItem("color", JSON.stringify({ r, g, b }));
   };
   return (
-    <div>
-      <h1>Color Mixer</h1>
-      <div
-        style={{
+    
+    <div style={{
           backgroundColor: "rgb(" + r + "," + g + "," + b + ")",
-          height: 200,
-          width: 200,
-        }}
-      ></div>
+          height:"100vmin",
+          textAlign:"center",
+          paddingTop:"150px"
+        }}>
+      <h1 style={{fontFamily:"times new roman", textShadow:"2px 2px white"}}>Color Mixer</h1>
+      
       <label htmlFor="">Red</label>
 
       <input
